@@ -1,122 +1,81 @@
-Dưới đây là **sơ đồ kiến trúc tổng thể dạng text (Markdown)** cho hệ thống thông tin tương tác tàu điện sử dụng kiến trúc **Microservices**, kèm theo **các milestone học tập** và **mục tiêu tổng thể**.
+<h1 align="center">Hi there 👋, I'm Dang Lam The Nhan</h1>
+
+<p align="center">
+  🎯 Fullstack Developer | 🛠️ Data Engineer | 🇻🇳 Based in Vietnam
+</p>
 
 ---
 
-## 🌐 **TỔNG QUAN KIẾN TRÚC DỰ ÁN (TEXT DIAGRAM)**
+### 💡 About Me
 
-```
-                        [Client - Trình duyệt]
-                                 │
-                                 ▼
-                         [Frontend: ReactJS]
-                                 │
-                                 ▼
-                          [API Gateway (FastAPI)]
-              ┌──────────────┬──────────────┬──────────────┬──────────────┐
-              ▼              ▼              ▼              ▼
-     [station-service] [line-service] [cbtc-simulator] [stats-service]
-          │              │              │              │
-          ▼              ▼              ▼              ▼
-   [PostgreSQL DB] [PostgreSQL DB] [NoSQL/Redis] [PostgreSQL+TimescaleDB]
-
-              └──────────────┬──────────────┘
-                             ▼
-                  [Message Broker: Redis/Kafka]
-
-                             ▼
-                  [Data Analytics Engine]
-                (Pandas, Plotly, Matplotlib)
-
-                             ▼
-                       [Monitoring Stack]
-                    (Prometheus + Grafana)
-
-                             ▼
-                      [Docker Compose / K8s]
-```
+- 👨‍💻 I’m currently a junior student at **HUTECH University**, passionate about software development and big data systems.
+- 🔎 My focus: **ETL pipelines**, **data lakes**, **web systems**, and **data-driven architecture**.
+- 🚀 I love building tools that **automate**, **scale**, and **make data usable**.
 
 ---
 
-## 🎯 **MỤC TIÊU TỔNG THỂ DỰ ÁN**
+### ⚙️ Tech Stack
 
-| Mục tiêu lớn                         | Ý nghĩa                                                                 |
-|-------------------------------------|------------------------------------------------------------------------|
-| Học và áp dụng kiến trúc **Microservices** | Quản lý hệ thống lớn qua chia module độc lập và triển khai linh hoạt  |
-| Phát triển kỹ năng **Fullstack Web** | Làm chủ cả backend (FastAPI) và frontend (ReactJS hoặc ASP.NET Razor) |
-| Trải nghiệm **phân tích dữ liệu & mô phỏng** | Hiểu cách mô hình hóa dữ liệu và vẽ biểu đồ trực quan                 |
-| Làm quen với **DevOps & Cloud Native** | Biết cách đóng gói Docker, deploy đa dịch vụ, và hướng đến cloud      |
+#### 🔹 Languages & Frameworks
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
+![Flask](https://img.shields.io/badge/-Flask-black?style=flat&logo=flask)
+![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
 
----
-
-## 🧩 **MILESTONE HỌC TẬP VÀ TIÊU CHÍ**
-
-### 🚩 **Milestone 1: Khởi tạo và tổ chức hệ thống**
-**🎯 Goal**: Làm quen kiến trúc Microservices + kết nối các service
-
-| Kỹ năng học được                            | Công cụ                |
-|---------------------------------------------|-------------------------|
-| Dockerfile, docker-compose cơ bản           | Docker, Docker Compose  |
-| Tổ chức folder microservices                | Python, FastAPI         |
-| Kết nối Frontend ↔ Backend qua REST API     | ReactJS, Axios, FastAPI |
-| Tạo schema DB và khởi tạo dữ liệu đầu tiên  | PostgreSQL, SQLAlchemy  |
+#### 🔹 Data & Tools
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+![Apache Kafka](https://img.shields.io/badge/-Kafka-231F20?style=flat&logo=apache-kafka&logoColor=white)
+![Airflow](https://img.shields.io/badge/-Airflow-017CEE?style=flat&logo=apache-airflow&logoColor=white)
+![BigQuery](https://img.shields.io/badge/-BigQuery-4285F4?style=flat&logo=googlecloud&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
 ---
 
-### 🚩 **Milestone 2: Xây dựng các chức năng chính**
-**🎯 Goal**: Hiểu cách chia domain theo service + gọi API đa tầng
+### 📂 Highlight Projects
 
-| Module               | API chính                              |
-|----------------------|-----------------------------------------|
-| `station-service`    | CRUD trạm, Tìm kiếm theo tuyến          |
-| `line-service`       | CRUD tuyến, Danh sách trạm trên tuyến   |
-| `cbtc-simulator`     | Trả về node-line, tính đường đi         |
-| `frontend`           | Tạo layout UI, gọi API động             |
+#### 🟢 [Data Pipeline with Airflow + BigQuery](https://github.com/yourusername/data-pipeline-airflow-bigquery)
+- Build an end-to-end data pipeline using Apache Airflow.
+- Fetch data from REST APIs → Transform with Pandas → Load to BigQuery.
+- Monitor & retry jobs using Airflow UI.
 
----
+#### 🟣 [OrphanCenter – Donation Web App](https://github.com/yourusername/orphancenter)
+- Fullstack MVC app for supporting orphans via donations and events.
+- Role-based access: Admin, Supporters, and Visitors.
+- Tech: ASP.NET MVC, SQL Server, Bootstrap, Razor.
 
-### 🚩 **Milestone 3: Mô phỏng hoạt động tàu điện (CBTC)**
-**🎯 Goal**: Biểu diễn mạng lưới, mô phỏng tàu chạy theo tuyến
+#### 🟠 [Inventory Analytics Dashboard](https://github.com/yourusername/inventory-analytics)
+- Flask + PostgreSQL backend with auto-generated inventory analytics.
+- ETL job fetches sales data and builds weekly insights.
+- Frontend with Chart.js and dynamic filters.
 
-| Kỹ năng học được                        | Công cụ                |
-|----------------------------------------|-------------------------|
-| Mô hình hóa tuyến bằng đồ thị (Graph)  | NetworkX (Python)       |
-| Mô phỏng thời gian thực                | WebSocket, FastAPI WS   |
-| Hiển thị tương tác bản đồ              | React + D3.js / Vis.js  |
-
----
-
-### 🚩 **Milestone 4: Phân tích dữ liệu & thống kê**
-**🎯 Goal**: Phân tích số liệu vận hành và vẽ dashboard
-
-| Kỹ năng học được                           | Công cụ                    |
-|--------------------------------------------|-----------------------------|
-| Phân tích dữ liệu hành trình tàu           | Pandas, Plotly, Matplotlib |
-| Truy vấn dữ liệu theo thời gian            | TimescaleDB + SQL          |
-| Hiển thị biểu đồ                           | Recharts, Chart.js (React) |
+#### 🔵 [Academic Topic Modeling Tool](https://github.com/yourusername/academic-topic-explorer)
+- NLP-based tool that clusters academic papers using topic modeling (LDA, BERTopic).
+- Visualized with interactive Dash dashboard.
 
 ---
 
-### 🚩 **Milestone 5: Triển khai & Giám sát**
-**🎯 Goal**: Làm quen DevOps, CI/CD và cloud
+### 📊 GitHub Stats
 
-| Kỹ năng học được                              | Công cụ                         |
-|-----------------------------------------------|----------------------------------|
-| Docker hóa từng service, cấu hình compose      | Docker, docker-compose           |
-| Monitoring hệ thống                            | Prometheus + Grafana             |
-| CI/CD và hướng triển khai cloud                | GitHub Actions, Railway, k8s     |
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=tokyonight" width="48%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=tokyonight" width="48%"/>
+</p>
 
 ---
 
-## 🧠 TÓM LẠI
+### 🌱 Currently Learning
 
-Nếu bạn hoàn thành các milestone trên, bạn sẽ:
-
-- Làm chủ tư duy **kiến trúc phân tán** và chia nhỏ hệ thống.
-- Biết cách **phân tích dữ liệu thời gian thực** phục vụ thống kê.
-- Tự build hệ thống **hiển thị trực quan** và **mô phỏng vận hành**.
-- Có nền tảng triển khai lên cloud (Azure, GCP, AWS).
-- Chuẩn bị tốt cho các vai trò: **Fullstack Developer**, **Data Engineer**, và cả **Cloud-native Engineer**.
+- Advanced Data Modeling & Warehouse Design
+- Kafka Stream Processing
+- DataOps & Testing in Pipelines
+- System Design for Data-heavy Applications
 
 ---
 
-Bạn có muốn mình tạo folder mẫu (`train-system/`) cho Milestone 1 không?
+### 📫 Let's connect!
+- 🌐 [LinkedIn](https://www.linkedin.com/in/yourusername)
+- 💌 Email: dangnhan2309@gmail.com
+
