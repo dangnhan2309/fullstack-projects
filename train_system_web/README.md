@@ -45,23 +45,17 @@ Dưới đây là **sơ đồ kiến trúc tổng thể dạng text (Markdown)**
 | Phát triển kỹ năng **Fullstack Web** | Làm chủ cả backend (FastAPI) và frontend (ReactJS hoặc ASP.NET Razor) |
 | Trải nghiệm **phân tích dữ liệu & mô phỏng** | Hiểu cách mô hình hóa dữ liệu và vẽ biểu đồ trực quan                 |
 | Làm quen với **DevOps & Cloud Native** | Biết cách đóng gói Docker, deploy đa dịch vụ, và hướng đến cloud      |
-
 ---
-
 ## 🧩 **MILESTONE HỌC TẬP VÀ TIÊU CHÍ**
-
 ### 🚩 **Milestone 1: Khởi tạo và tổ chức hệ thống**
 **🎯 Goal**: Làm quen kiến trúc Microservices + kết nối các service
-
 | Kỹ năng học được                            | Công cụ                |
 |---------------------------------------------|-------------------------|
 | Dockerfile, docker-compose cơ bản           | Docker, Docker Compose  |
 | Tổ chức folder microservices                | Python, FastAPI         |
 | Kết nối Frontend ↔ Backend qua REST API     | ReactJS, Axios, FastAPI |
 | Tạo schema DB và khởi tạo dữ liệu đầu tiên  | PostgreSQL, SQLAlchemy  |
-
 ---
-
 ### 🚩 **Milestone 2: Xây dựng các chức năng chính**
 **🎯 Goal**: Hiểu cách chia domain theo service + gọi API đa tầng
 
@@ -110,13 +104,10 @@ Dưới đây là **sơ đồ kiến trúc tổng thể dạng text (Markdown)**
 ## 🧠 TÓM LẠI
 
 Nếu bạn hoàn thành các milestone trên, bạn sẽ:
-
 - Làm chủ tư duy **kiến trúc phân tán** và chia nhỏ hệ thống.
 - Biết cách **phân tích dữ liệu thời gian thực** phục vụ thống kê.
 - Tự build hệ thống **hiển thị trực quan** và **mô phỏng vận hành**.
 - Có nền tảng triển khai lên cloud (Azure, GCP, AWS).
 - Chuẩn bị tốt cho các vai trò: **Fullstack Developer**, **Data Engineer**, và cả **Cloud-native Engineer**.
-
 ---
-
 Bạn có muốn mình tạo folder mẫu (`train-system/`) cho Milestone 1 không?
